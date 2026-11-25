@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f3ff;
+    color: #29264b;
+}
+
+header {
+    background: #6558d3;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+main {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 15px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 13px;
+    width: 65%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 13px 18px;
+    background: #6558d3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background: #4035a5;
+}
+
+li {
+    list-style: none;
+    padding: 13px;
+    margin-top: 10px;
+    background: #f0eeff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.progress {
+    background: #e5e2f5;
+    height: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    background: #6558d3;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+#timer {
+    font-size: 40px;
+    margin: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+}
